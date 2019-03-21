@@ -1,0 +1,325 @@
+\chapter{Mengenal Kecerdasan Buatan dan Scikit-Learn}
+Buku umum yang digunakan adalah \cite{russell2016artificial} dan  
+untuk sebelum UTS menggunakan buku \textit{Python Artificial Intelligence Projects for Beginners}\cite{eckroth2018python}.
+Dengan praktek menggunakan python 3 dan editor anaconda dan library python scikit-learn.
+Tujuan pembelajaran pada pertemuan pertama antara lain:
+\begin{enumerate}
+\item
+Mengerti definisi kecerdasan buatan, sejarah kecerdasan buatan, perkembangan dan penggunaan di perusahaan
+\item
+Memahami cara instalasi dan pemakaian sci-kit learn
+\item
+Memahami cara penggunaan variabel explorer di spyder
+\end{enumerate}
+Tugas dengan cara dikumpulkan dengan pull request ke github dengan menggunakan latex pada repo yang dibuat oleh asisten riset.
+
+\section{Teori}
+Praktek teori penunjang yang dikerjakan :
+\begin{enumerate}
+\item
+Buat Resume Definisi, Sejarah dan perkembangan Kecerdasan Buatan, dengan bahasa yang mudah dipahami dan dimengerti. Buatan sendiri bebas plagiat[hari ke 1](10)
+\item
+Buat Resume mengenai definisi supervised learning, klasifikasi, regresi dan unsupervised learning. Data set, training set dan testing set.[hari ke 1](10)
+\end{enumerate}
+
+\section{Instalasi}
+Membuka https://scikit-learn.org/stable/tutorial/basic/tutorial.html. Dengan menggunakan bahasa yang mudah dimengerti dan bebas plagiat. 
+Dan wajib skrinsut dari komputer sendiri.
+\begin{enumerate}
+\item
+Instalasi library scikit dari anaconda, mencoba kompilasi dan uji coba ambil contoh kode dan lihat variabel explorer[hari ke 1](10)
+\item
+Mencoba Loading an example dataset, menjelaskan maksud dari tulisan tersebut dan mengartikan per baris[hari ke 1](10)
+\item
+Mencoba Learning and predicting, menjelaskan maksud dari tulisan tersebut dan mengartikan per baris[hari ke 2](10)
+\item
+mencoba Model persistence, menjelaskan maksud dari tulisan tersebut dan mengartikan per baris[hari ke 2](10)
+\item 
+Mencoba Conventions, menjelaskan maksud dari tulisan tersebut dan mengartikan per baris[hari ke 2](10)
+\end{enumerate}
+
+
+\section{Penanganan Error}
+Dari percobaan yang dilakukan di atas, apabila mendapatkan error maka:
+
+\begin{enumerate}
+	\item
+	skrinsut error[hari ke 2](10)
+	\item
+Tuliskan kode eror dan jenis errornya [hari ke 2](10)
+	\item
+Solusi pemecahan masalah error tersebut[hari ke 2](10)
+
+\end{enumerate}
+
+
+\section{Andri Fajar S/1164065}
+\subsection{TEORI}
+\begin{enumerate}
+\item
+Definisi, Sejarah, Dan Perkembangan Sejarah AI
+\subitem Didefinisikan  kecerdasan yang ditunjukkan oleh suatu entitas buatan. Umumnya dianggap komputer. Kecerdasan Buatan (Artificial Intelligence atau AI) didefinisikan sebagai kecerdasan yang ditunjukan oleh suatu entitas buatan. Sistem seperti ini umumnnya dianggao kemputer. Kecerdasan dimasukkan ke dalam mesin (komputer) agar dapat melakukan pekerjaan seperti yang dapat dilakukan manusia. Kecerdasan Buatan (Artificial Intelligence atau AI) didefinikasikan sebagai kecerdasan yang ditinjukkan oleh suatu entitas buatan. Sistem seperti ini umumnya di anggap komputer. Kecerdasan diciptakan dan dimasukkan melakukan pekerjaan seperti yang dapat dilakukan manusia. 
+\subitem Sejarah dan perkembangan kecerdasan buatan terjadi pada musim panas tahun 1956 tercatat adanya seminar mengenai AI di Darmouth College. Seminar pada waktu itu dihadiri oleh sejumlah pakar komputer dan membahas potensi komputer dalam meniru 
+kepandaian manusia. Akan tetapi perkembangan yang sering terjadi semenjak diciptakannya LISP, yaitu bahasa kecerdasan buatan yang dibuat tahun 1960 oleh John McCarthy. Istilah pada kecerdasan buatan atau Artificial Intelligence diambil dari Marvin Minsky dari MIT. Dia menulis karya ilmiah berjudul Step towards Artificial Intelligence,The Institute of radio Engineers Proceedings 49, January 1961\cite{ai2011kecerdasani}.
+\subitem Supervised learning merupakan sebuah pendekatan dimana sudah terdapat data yang dilatih, dan terdapat variable yang ditargetkan sehingga tujuan dari pendekatan ini adalah mengkelompokan suatu data ke data yang sudah ada. Sedangkan unsupervised 
+learning tidak memiliki data latih, sehingga dari data yang ada, kita mengelompokan data tersebut menjadi 2 bagian atau 3 bagian dan seterusnya.
+\subitem Klasifikasi adalah salah satu topik utama dalam data mining atau machine learning. Klasifikasi yaitu suatu pengelompokan data dimana data yang digunakan tersebut mempunyai kelas label atau target.
+\subitem Regresi adalah Supervised learning tidak hanya mempelajari classifier, tetapi juga mempelajari fungsi yang dapat memprediksi suatu nilai numerik. Contoh, ketika diberi foto seseorang, kita ingin memprediksi umur, tinggi, dan berat orang yang ada pada foto tersebut.
+\subitem Data set adalah cabang aplikasi dari Artificial Intelligence/Kecerdasan Buatan yang fokus pada pengembangan sebuah sistem yang mampu belajar sendiri tanpa harus berulang kali di program oleh manusia.
+\item Training set yaitu jika pasangan objek, dan kelas yang menunjuk pada objek tersebut adalah suatu contoh yang telah diberi label akan menghasilkan suatu algoritma pembelajaran.
+\subitem Testing set digunakan untuk mengukur sejauh mana classifier berhasil melakukan klasifikasi dengan benar.
+
+
+\subsection{Instalasi}
+
+\begin{itemize}
+\item
+Memberikan perintah conda install scikit-learn di cmd, lihat gambar 1.1
+\item
+Melihat versinya dengan memberikan perintah conda --version dan python --version, lihat gambar 1.2
+\item
+Install pip, lihat pada gambar 1.3
+\item
+Hasil Kompile, lihat gambar 1.4
+\item
+Import dataset kemudian load iris dan data dari digits, lihat gambar 1.5
+\item
+Melihat data digits
+\end{itemize}
+
+\begin{figure}[ht]\centerline{\includegraphics[width=1\textwidth]{figures/111.PNG}}\caption{conda install scikit-learn.}\end{figure}
+
+\begin{figure}[ht]\centerline{\includegraphics[width=1\textwidth]{figures/222.PNG}}\caption{Melihat Version.}\end{figure}
+
+\begin{figure}[ht]\centerline{\includegraphics[width=1\textwidth]{figures/333.PNG}}\caption{Install pip.}\end{figure}
+
+\begin{figure}[ht]\centerline{\includegraphics[width=1\textwidth]{figures/444.PNG}}\caption{Hasil Kompile.}\end{figure}
+
+\begin{figure}[ht]\centerline{\includegraphics[width=1\textwidth]{figures/555.PNG}}\caption{Hasil Kompile.}\end{figure}
+
+\begin{figure}[ht]\centerline{\includegraphics[width=1\textwidth]{figures/666.PNG}}\caption{Hasil Kompile.}\end{figure}
+\end{enumerate}
+
+
+
+\subsection{Mencoba Learning and predicting}
+
+\begin{enumerate}
+\item
+Buka CMD lalu ketikan perintah Python.
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri1.png}
+   	 \caption{Membuka Python }	
+	\end{center}
+\end{figure}
+\item
+ "from sklearn import svm"  artinya akan memanggil dan menggunakan estimator dari kelas sklearn.svm.SVC
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri2.png}
+   	 \caption{ Estimator Sklearn }	
+	\end{center}
+\end{figure}
+\item
+ disini gamma didefinisikan secara manual
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri3.png}
+   	 \caption{Mendefinisikan Classifier }	
+	\end{center}
+\end{figure}
+\item
+Estimator clf (for classifier) pertama kali dipasang pada model. Ini dilakukan dengan melewati training set ke metode fit. Untuk training set, akan menggunakan semua gambar dari set data yang ada, kecuali untuk gambar terakhir, yang dicadangan untuk prediksi. Pada skrip dibawah memilih training set dengan sintaks Python [: -1], yang menghasilkan array baru yang berisi semua kecuali item terakhir dari digits.data
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri4.png}
+   	 \caption{Memanggil Classifier  }	
+	\end{center}
+\end{figure}
+\item
+Pada penggalan skrip dibawah, ini menunjukan prediksi nilai baru menggunakan gambar terakhir dari digits.data. 
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri5.png}
+   	 \caption{Memprediksi Nilai Baru}	
+	\end{center}
+\end{figure}
+\end{enumerate}
+
+\subsection{Mencoba Model Persistance}
+\begin{enumerate}
+\item
+ "from sklearn import svm" artinya akan mengimport sebuah Support Vector Machine(SVM) yang merupakan algoritma classification yang akan diambil dari Scikit-Learn.
+\item
+ "from sklearn import datasets"  artinya akan mengambil package datasets dari Scikit-Learn.
+\item
+ketikan, clf = svm.SVC(gamma='scale') berfungsi untuk mendeklarasikan suatu value yang bernama clf yang berisi gamma.
+\item
+Ketikan, X, y = iris.data, iris.target, artinya X sebagai data iris, dan y merupakan larik target.
+\item
+Ketikan, clf.fit(X, y) berfungsi untuk melakukan pengujian classifier. hasilnya seperti ini
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri7.png}
+   	 \caption{Hasil  Classifier}	
+	\end{center}
+\end{figure}
+\item
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri8.png}
+   	 \caption{Hasil  Classifier}	
+	\end{center}
+\end{figure}
+Dari gambar diatas dapat dijelaskan bahwa akan mengimport Pickle dari Python. Pickle digunakan untuk serialisasi dan de-serialisasi struktur objek Python. Objek apa pun dengan Python dapat di-Pickle sehingga dapat disimpan di disk. kemudian menyimpan data objek ke file CLF sebelumnya dengan menggunakan function pickle.dumps(clf).
+\item
+Setelah mengetikan fungsi fungsi diatas, selanjutnya ketikan "clf2 = pickle.loads(s)" yang artinya pickle.loads digunakan untuk memuat data pickle dari string byte. "S" dalam loads mengacu pada fakta bahwa dalam Python 2, data dimuat dari string.
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri9.png}
+   	 \caption{Pickle  Python}	
+	\end{center}
+\end{figure}
+\item
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri10.png}
+   	 \caption{ Classifier Pickle}	
+	\end{center}
+\end{figure}
+Pada gambar diatas dilakukan pengujian nilai baru dengan menggunakan "cf2.predict(X[0:1])" dengan target asumsinya (0,1) hasilnya berbentuk array.
+\item
+ "from joblib import dump , load" yang artinya akan Merekonstruksi objek Python dari file yang sudah ada.\\
+
+dump(clf, 'filename.joblib') akan merekontruksi file CLF yang tadi sudah dideklarasikan.\\
+clf = load('filename.joblib') untuk mereload model yang sudah di Pickle\\
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri11.png}
+   	 \caption{ Joblib}	
+	\end{center}
+\end{figure}
+\end{enumerate}
+
+\subsection{Mencoba Conventions}
+\begin{enumerate}
+\item
+Import numpy as np, digunakan untuk mengimport Numpy sebagai np.\\
+From sklearn import randomprojection artinya modul yang mengimplementasikan cara sederhana dan efisien secara komputasi untuk mengurangi dimensi data dengan memperdagangkan sejumlah akurasi yang terkendali (sebagai varian tambahan) untuk waktu pemrosesan yang lebih cepat dan ukuran model yang lebih kecil.
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri12.png}
+   	 \caption{Deklarasi Numpy}	
+	\end{center}
+\end{figure}
+\item
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri13.png}
+   	 \caption{Contoh  Casting}	
+	\end{center}
+\end{figure}
+Pada gambar diatas dapat dijelaskan bahwa :\\
+rng = np.random.RandomState(0), digunakan untuk menginisialisasikan random number generator.\\
+X = rng.rand(10, 2000) artinya akan merandom value antara 10 sampai 2000.\\
+X = np.array(X, dtype='float32') Array numpy terdiri dari buffer memori "mentah" yang diartikan sebagai array melalui "views". Anda dapat menganggap semua array numpy sebagai tampilan. Mendeklarasikan X sebagai float32.
+\item
+Dalam contoh ini, X adalah float32, yang dilemparkan ke float64 oleh fittransform (X).
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri14.png}
+   	 \caption{ FitTransform}
+	\end{center}
+\end{figure}
+\item
+Target regresi dilemparkan ke float64 dan target klasifikasi dipertahankan.
+
+list(clf.predict(irisdata[:3])), akan memprediksi 3 data dari iris.\\
+clf.fit irisdata, iristargetnames[iristarget] menguji classifier dengan ada targetnya yaitu irisnya sendiri.\\
+list(clf.predict(irisdata[:3])), setelah diuji maka akan muncul datanya seperti dibawah ini\\
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri15.png}
+   	 \caption{Regresi Yang Dilempar}
+	\end{center}
+\end{figure}
+Di sini, prediksi pertama () mengembalikan array integer, karena iristarget (array integer)yang digunakan sesuai. Prediksi kedua () mengembalikan array string, karena iristargetnames cocok.
+\item
+Refitting dan Memperbaharui Parameter
+
+y = rngbinomial(1, 0.5, 100) , random value dengan angka binomial atau suku dua untuk y \\
+clfsetparams(kernel='linear')fit(X, y) mengubahn kernel default menjadi linear \\
+clfsetparams(kernel='rbf', gamma='scale')fit(X, y)  Di sini, kernel default rbf pertama kali diubah menjadi linear melalui\\ SVCsetparams () setelah estimator dibuat, dan diubah kembali ke rbf untuk mereparasi estimator dan membuat prediksi kedua.
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri16.png}
+   	 \caption{Memperbaharui Parameter}
+	\end{center}
+\end{figure}
+\item
+MultiClass VS MultiLabel Classifier \\
+from sklearn.multiclass import OneVsRestClassifier ,adalah  ketika kita ingin melakukan klasifikasi multiclass atau multilabel dan baik unutk menggunakan OneVsRestClassifier per kelas. Untuk setiap classifier, kelas tersebut dipasang terhadap semua kelas lainnya. (Ini cukup jelas dan itu berarti bahwa masalah klasifikasi multiclass / multilabel dipecah menjadi beberapa masalah klasifikasi biner).\\
+from sklearn.preprocessing import LabelBinarizer ,adalah kelas utilitas untuk membantu membuat matriks indikator label dari daftar label multi-kelas\\
+Dalam gambar dibawah, classifier cocok pada array 1d label multiclass dan oleh karena itu metode predict () memberikan prediksi multiclass yang sesuai.
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri17.png}
+   	 \caption{MultiClass }
+	\end{center}
+\end{figure}
+\item
+Di sini, classifier cocok () pada representasi label biner 2d dari y, menggunakan LabelBinarizer. Dalam hal ini predict () mengembalikan array 2d yang mewakili prediksi multilabel yang sesuai.
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri18.png}
+   	 \caption{MultiClass  biner 2D}
+	\end{center}
+\end{figure}
+\item
+from sklearn.preprocessing import MultiLabelBinarizer , artinya Transformasi antara iterable dari iterables dan format multilabel.\\
+Dalam hal ini, penggolongnya sesuai pada setiap instance yang diberi beberapa label. MultiLabelBinarizer digunakan untuk membuat binarize array 2d dari multilabel agar sesuai. Hasilnya, predict () mengembalikan array 2d dengan beberapa label yang diprediksi untuk setiap instance.
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andri19.png}
+   	 \caption{MultiLabel }
+	\end{center}
+\end{figure}
+\end{enumerate}
+
+\section{Penanganan Error}
+
+\begin{enumerate}
+	\item
+	Berikut ini merupakan eror yang ditemui pada saat melakukan percobaan skrip.
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/andrierror.png}
+   	 \caption{Eror Import}
+	\end{center}
+\end{figure}
+	\item
+Pada gambar eror diatas, kode erornya adalah "ImportError: No Module Named" artinya mengalami masalah saat mengimpor modul yang ditentukan.
+	\item
+Solusinya bisa dilakukan seperti berikut :\\
+eror diats terjadi dikarenakan Library Joblib belum terinstal pada PC. Maka dari itu sekarang kita harus menginstalnya dulu.
+	\item
+Buka CMD, kemudian ketikan "pip install joblib" tunggu sampai instalasi berhasil seperti gambar berikut.
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/solusiAndri.png}
+   	 \caption{Instal Library Joblib}
+	\end{center}
+\end{figure}
+	\item
+Apabila sudah terinstall, dapat dilakukan lagi import library joblib, maka akan berhasil seperti dibawah berikut
+\begin{figure}
+	\begin{center}
+   	 \includegraphics[scale=1]{figures/solusiAndrii.png}
+   	 \caption{ Import Library Joblib}
+	\end{center}
+\end{figure}
+\end{enumerate}
+
+
+
