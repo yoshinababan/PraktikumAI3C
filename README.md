@@ -1,2 +1,2 @@
-# Template
-Template untuk buku informatika standar
+# kecerdasanbuatan
+Modul Praktikum Kecerdasan Buatan
