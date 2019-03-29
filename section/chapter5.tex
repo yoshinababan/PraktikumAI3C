@@ -70,5 +70,134 @@ tell about result for purpose of this research.
 \caption{Gambar Skip-Gram.}
 \label{no6}
 \end{figure}
+\end{enumerate}
+
+
+
+
+\subsection{Praktek Program}
+\begin{enumerate}
+\item Mencoba dataset google dan menjelaskan vektor dari kata love,faith, fall, sick, clear, shine, bag, car, wash, motor dan cycle. 
+\begin{itemize}	
+\item Pada gambar \ref{1love} dapat dilihat bahwa vektor memiliki array sebanyak 300 dimensi. Untuk identitas sektor satu adalah 0.10.  
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/1love.png}}
+	\caption{Gambar Vektor Love.}	
+	\label{1love}
+	\end{figure}
+
+
+\item Pada gambar \ref{2faith} untuk vektor faith dapat dilihat memliki nilai 0.26 , untuk similaritasnya cukup mendekati vektor love dimana faith dapat dikategorikan dalam satu kategori dengan love.
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/2faith.png}}
+	\caption{Gambar vektor faith.}	
+	\label{2faith}
+	\end{figure}
+
+
+\item Pada gambar \ref{3fall} Vektor fall hanya memiliki nilai minus yaitu -0.04 , dimana mesin memahami bahwa fall tidak terdapat dalam satu kategori yang sama dengan love dan faith
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/3fall.png}}
+	\caption{Gambar vektor fall.}	
+	\label{3fall}
+	\end{figure}
+
+
+\item  Pada gambar \ref{4sick} Vektor sick memiliki nilai identitas 1.82 dimana tidak mendekati love, faith maupun fall.
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/4sick.png}}
+	\caption{Gambar vektor sick.}	
+	\label{4sick}
+	\end{figure}
+
+
+\item Pada gambar \ref{5clear} Vektor clear memiliki nilai identitas -2,44 dan tidak mendekati nilai dari vektor fall sehingga tidak dapat dijadikan dalam satu kategori
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/5clear.png}}
+	\caption{Gambar vektor clear.}	
+	\label{5clear}
+	\end{figure}
+
+\item Pada gambar \ref{6shine} Untuk vektor shine -0.12 tidak mendekati vektor manapun.
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/6shine.png}}
+	\caption{Gambar vektor shine.}	
+	\label{6shine}
+	\end{figure}
+
+\item Pada gambar \ref{7bag} Vektor bag memiliki i=nilai identitas -0.03 yang mendekati dengan vektor fall. SEhingga mesin memahami bahwa mungkin saja kedua vektor tersebut berada dalam satu kategori.
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/7bag.png}}
+	\caption{Gambar vektor bag.}	
+	\label{7bag}
+	\end{figure}
+	
+
+\item Pada gambar \ref{8car} Vektor car nilainya 0.13 mendekati vektor love dan faith sehingga mungkin dapat dikategorikan dalam satu kategori.
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/8car.png}}
+	\caption{Gambar Vektor car.}	
+	\label{8car}
+	\end{figure}
+
+
+\item Pada gambar \ref{9wash} Vektor wash memiliki nilai 9.46 jauh dari vektor vektor lainnya.
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/9wash.png}}
+	\caption{Gambar Vektor wash.}	
+	\label{9wash}
+	\end{figure}
+
+
+\item Pada gambar \ref{10motor} Vektor motor memiliki nilai identitas 5.73 yang bisa mendekati vektor wash. Dapat dikatakan bahwa motor dapat dicuci jika diarti dalam satu kategori yang sama.
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/10motor.png}}
+	\caption{Gambar vektor motor.}	
+	\label{10motor}
+	\end{figure}
+
+\item Pada gambar \ref{11cycle} Vektor cycle memiliki nilai identitas 5.73 yang bisa mendekati vektor wash. Dapat dikatakan bahwa motor dapat dicuci jika diarti dalam satu kategori yang sama.
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/11cycle.png}}
+	\caption{Gambar vektor cycle.}	
+	\label{11cycle}
+	\end{figure}
+\end{itemize}
+
+\item Mencoba untuk melakukan perbandingan similirati dari masing-masing kata tersebut. Lihat gambar \ref{12similariti} yang merupakan hasil prediksi similariti
+	\begin{figure}[ht]
+	\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/12similariti.png}}
+	\caption{Gambar Similariti.}	
+	\label{12similariti}
+	\end{figure}
+	Dapat disimpulkan bahwa:
+		\begin{itemize}
+		\item Untuk fall dan love hasilnya adalah 11\%
+		\item Untuk fall dan faith hasilnya adalah 5\%
+		\item Untuk fall dan sick hasilnya adalah 8\%
+		\item Untuk fall dan clear hasilnya adalah 8\%
+		\item Untuk fall dan shine hasilnya adalah 27\%
+		\item Untuk fall dan bag hasilnya adalah 7\%
+		\item Untuk fall dan car hasilnya adalah 11\%
+		\item Untuk fall dan wash hasilnya adalah 14\%
+		\item Untuk fall dan cycle hasilnya adalah 19\%
+		
+		\end{itemize}
+\item Extract Words dan PermuteSentences
+	\begin{itemize}
+	\item Extract Words : merupakan function untuk menambahkan, menghilangkan atau menghapuskan, hal hal yang tidak penting atau tidakperlu di dalam teks. Dalam contoh gambar \ref{11cycle} ini. menggunakan function extract words untuk menghapus komen dengan python style , mencari data yang diinginkan, dan memberikan spasi pada teks.
+		\begin{figure}[ht]
+		\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/14extract.png}}
+		\caption{Gambar Extract Words.}	
+		\label{14extract}
+		\end{figure}
+	\item PermuteSentences : merupakan class yang digunakan unut melakukan pengocokan secara acak pada data yang ada. Digunakan cara ini agar tidak terjadi kelebihan memori pada saat dijalankan. Contoh pada gambar \ref{15permute} yaitu fungsi akan memanggil dede. Yang kemudian mendefinisikan variabel shuffled untuk dede dam melakukan random shuffle yaitu pengocokan acak untuk kata dede.
+ 		\begin{figure}[ht]
+		\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/15permute.png}}
+		\caption{Gambar PermuteSentences.}	
+		\label{15permute}
+		\end{figure}
+	\end{itemize}
+
 
 \end{enumerate}
