@@ -197,8 +197,91 @@ tell about result for purpose of this research.
 		\caption{Gambar PermuteSentences.}	
 		\label{15permute}
 		\end{figure}
-	\end{itemize}
+		\end{itemize}
+\item Fungsi dari librari gensim TaggedDocument dan Doc2Vec disertai praktek pemakaiannya. Tunjukkan keluarannya dari komputer sendiri dan artikan maksud setiap luaran yang didapatkan.
+		\begin{itemize}
+		\item Fungsi dari Librari Gensim TaggedDocument dan Doc2Vec :
+		\begin{figure}[ht]
+		\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/18gensim.jpg}}
+		\caption{Gambar librari Gensim}	
+		\label{18gensim}
+		\end{figure}
+		\item Penjelasan pada gambar \ref{18gensim} : yaitu mengimport modul Tagged Document dari model gensim. Sedangkan pada baris kedua import Doc2vec dari model gensim.
+		\end{itemize}
 
+\item Cara Menambahkan Data Training
+	\begin{itemize}
+	\item Penskalaan yaitu dataset ditempatkan sambil mempertimbangkan kumpulan data linier seperti data bank.
+	\item  Disintegrasi dan Komposisi: Langkah ini melibatkan pemecahan fitur tertentu untuk membangun data pelatihan yang lebih baik untuk model yang Anda pahami lebih komprehensif.
+	\item Komposisi: Ini adalah proses terakhir yang melibatkan penggabungan berbagai fitur menjadi satu fitur untuk mendapatkan data yang lebih akurat atau bermakna.
+		\begin{figure}[ht]
+		\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/19data.jpg}}
+		\caption{Gambar Data Training.}	
+		\label{19data}
+		\end{figure}
+		\item  Penjelasan pada gambar \ref{19data} : Membaca direktori name dari data yang ada di dalam kurung. Pada kodingan di atas ada 3 data. Data pertama yaitu: train/pos,train/neg, train/unsuo, test/pos dan test/neg. Data kedua yaitu:txtsentoken/pos dan txt/sentokenneg. Sedangkan data ke 3 yaitu: standfordSentimentTreeBank/Originalrtsnippes.txt
+		\end{itemize}
+
+
+\item Kenapa Harus Dilakukan Pengocokan dan Pembersih Data
+	\par Pengocokan data dilakukan untuk merandom data-data yang ada. Sedangkan pembersihan data dilakukan untuk pengecekan data untuk penetapan dan pemulihan data yang hilang, pengecekan penentapan meliputi pemerikasaan data yang out of range (di luar cakupan) tidak konsisten secara logika, ada nilai-nilai ekstrim, data dengan nilai-nilai tdk terdefinisi, sedangkan pemulihan data yang hilang adalah nilai dari suatu variabel yang tidak diketahui dikarenakan  jawaban responden yang membingungkan.
+		\begin{itemize}
+		\begin{figure}[ht]
+		\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/20a.jpg}}
+		\caption{Gambar Pengocokan Data.}	
+		\label{20a}
+		\end{figure}
+		\item Penjelasan pada gambar \ref{20a} : yaitu melakukan pengacakan model terhadap data unsupervised learning. 	Dan kemudian baru membuat modelnya setelah dilakukan pengacakan terhadap yang pertama tadi.
+
+		\begin{figure}[ht]
+		\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/20b.jpg}}
+		\caption{Gambar Pembersihan Data.}	
+		\label{20b}
+		\end{figure}
+		\item Penjelasan pada gambar \ref{20b} :  Mengimport Library Re. Kemudian membuat fungsi utuk menghapus tag html dan perkocokan. Dimana di dalam variabel ini ada kodingan untuk menghapus tag html yaitu petik satu, tanda baca dan spasi yang berurutan.
+		\end{itemize}
+
+\item Model harus di Save dan Kenapa Temporari Training Harus Dihapus
+	\par Karena berfungsi untuk mencegah ram agar tidak lemot dan untuk mengosongkan memori agar sedikit lega atau tidak lemot.
+		\begin {itemize}
+		\begin{figure}[ht]
+		\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/21a.jpeg}}
+		\caption{Gambar Temporary Training}	
+		\label{21a}
+		\end{figure}
+		\item Penjelasan pada gambar \ref{21a} : Menghapus Temporary Training Data
+		\end {itemize}
+
+\item InferCode
+	\par Infercode digunakan untuk menyimpulkan vektor yang berhubungan dengan vektor dokumen baru.
+		\begin{itemize}
+		\begin{figure}[ht]
+		\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/21a.jpeg}}
+		\caption{Gambar Infer Code}	
+		\label{21a}
+		\end{figure}
+		\item Penjelasan pada gambar \ref{21a} :  Pada hasil gambar tersebut dapat disimpulkan bahwa kalimat "Belajar Jarkom" menghasilkan outputan berupa array seperti angka-angka di bawah.
+		\end{itemize}
+
+\item Cosine Similarity.
+		\begin{itemize}
+		\begin{figure}[ht]
+		\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/22cosine.jpeg}}
+		\caption{Gambar Cosine.}	
+		\label{22cosine}
+		\end{figure}
+		\item  Penjelasan pada gambar \ref{22cosine} : yaitu mengimport cosine similartity dari sklearn metrics pairwise. Dimana cosine similarity berfungsi untuk mengecek kemiripan dari kalimat Services Sucks. Dan akan muncul hasilnya yaitu array.
+		\end{itemize}
+
+\item Score Dari Cross Validation
+		\begin{itemize}
+		\begin{figure}[ht]
+		\centerline{\includegraphics[width=0.5\textwidth]{figures/chapter5/23score.jpeg}}
+		\caption{Gambar Score dari cross Validation.}	
+		\label{23score}
+		\end{figure}
+		\item  Penjelasan pada gambar \ref{23score} :  Menghitung model clrf, sentvecs, setiments serta juga meghitung keakuratannya.
+		\end{itemize}
 \end{enumerate}
 
 \subsection{Penanganan Error}
