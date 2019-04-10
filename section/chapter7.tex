@@ -13,17 +13,19 @@ Please tell more about conclusion and how to the next work of this study.
 	\label{no1}
 	\end{figure}
 
-\item Jelaskan konsep dasar K-Fold Cross Validation, dilengkapi dengan ilustrasi atau gambar.
+\item Jelaskan konsep dasar K-Fold Cross Validation.
 
 \item Jelaskan apa maksudnya kode program for train, test in splits, dilengkapi dengan ilustrasi atau gambar
+	\par Maksudnya yaitu untuk menguji apakah setiap data pada dataset sudah di split dan tidak terjadi penumpukan. Yang dimana maksudnya di setiap class tidak akan muncul id yang sama. Ilustrasinya misalkan kita memiliki 5 jam tangan dengan model yang berbeda. Kemudian kita bagikan jam tersebut kepada teman, tentunya teman tersebut yang menerima jam tangan itu tidak memiliki jam yang sama modelnya.
+ 
 
-\item Jelaskan apa maksudnya kode program train\_content dan test\_content, dilengkapi dengan ilustrasi atau gambar.
+\item Apa Maksud Kode Program train\_content = d['CONTENT'].iloc[train\_idx] dan test\_content = d['CONTENT'].iloc[test\_idx] Dilengkapi Dengan Ilustrasi Gambar.
 
-\item Apa maksud dari fungsi tokenizer, dilengkapi dengan ilustrasi atau gambar.
+\item Apa Maksud Dari Fungsi Tokenizer = Tokenizer(num words=2000) Dan Tokenizer.fit on texts(train content), Dilengkapi Dengan Ilustrasi Gambar
 
-\item Jelaskan apa maksud dari fungsi d\_train\_inputs dan d\_test\_inputs, dilengkapi dengan ilustrasi atau gambar.
+\item  Apa Maksud Dari Fungsi d train inputs = tokenizer.texts to matrix(train content, mode=’tfidf ’) dan d test inputs = tokenizer.texts to matrix(test content, mode=’tfidf ’), Dilengkapi Dengan Ilustrasi Kode Dan Atau Gambar
 
-\item 7.
+\item Apa Maksud Dari Fungsi d train inputs = d train inputs/np.amax(np.absolute(d\_train) :
 
 \item Jelaskan apa maksud dari fungsi d\_train\_outputs dan d\_test\_outputs, dilengkapi dengan ilustrasi atau gambar.
 
@@ -89,9 +91,6 @@ Please tell more about conclusion and how to the next work of this study.
 
 
 \end{enumerate}
-
-
-
 
 
 \subsection{Penanganan Error}
