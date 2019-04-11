@@ -13,7 +13,21 @@ Please tell more about conclusion and how to the next work of this study.
 	\label{no1}
 	\end{figure}
 
-\item Jelaskan konsep dasar K-Fold Cross Validation.
+\item Menjelaskan konsep dasar K-Fold Cross Validation
+	
+	\par Penjelasan kode listing :
+	\begin{enumerate}
+	\item Membuat variabel kfold yang memanggil fungsi StratifiedKFold. StratifiedKFold itu sendiri ialah variasi Kfold yang mengembalikan lipatan bertingkat. Yang dimana pada kode program tersebut jumlah lipatannya adalah 5 atau dibagi menjadi 5 bagian.
+	\item Membuat variabel split yang mempresentasikan variabel kfold untuk dibagi berdasarkan class.
+	\end{enumerate}
+	
+	\par Berikut adalah gambar  \ref{A2} ilustrasi dari kosep dasar kfold.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/chapter7/no2.jpg}
+		\caption{StratifiedKFold}
+		\label{A2}
+		\end{figure}
 
 \item Jelaskan apa maksudnya kode program for train, test in splits, dilengkapi dengan ilustrasi atau gambar
 	\par Maksudnya yaitu untuk menguji apakah setiap data pada dataset sudah di split dan tidak terjadi penumpukan. Yang dimana maksudnya di setiap class tidak akan muncul id yang sama. Ilustrasinya misalkan kita memiliki 5 jam tangan dengan model yang berbeda. Kemudian kita bagikan jam tersebut kepada teman, tentunya teman tersebut yang menerima jam tangan itu tidak memiliki jam yang sama modelnya.
