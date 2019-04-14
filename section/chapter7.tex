@@ -14,28 +14,51 @@ Please tell more about conclusion and how to the next work of this study.
 	\end{figure}
 
 \item Menjelaskan konsep dasar K-Fold Cross Validation
-	
+	\lstinputlisting[firstline=8, lastline=20]{src/chapter7/A2.py}
 	\par Penjelasan kode listingg :
 	\begin{enumerate}
 	\item Membuat variabel kfold yang memanggil fungsi StratifiedKFold. StratifiedKFold itu sendiri ialah variasi Kfold yang mengembalikan lipatan bertingkat. Yang dimana pada kode program tersebut jumlah lipatannya adalah 5 atau dibagi menjadi 5 bagian.
 	\item Membuat variabel split yang mempresentasikan variabel kfold untuk dibagi berdasarkan class.
 	\end{enumerate}
 	
-	\par Berikut adalah gambar  \ref{A2} ilustrasi dari kosep dasar kfold.
+	\par Berikut adalah gambar  \ref{no2} ilustrasi dari kosep dasar kfold.
 		\begin{figure}[!hbtp]
 		\centering
 		\includegraphics[scale=0.4]{figures/chapter7/no2.jpg}
 		\caption{StratifiedKFold}
-		\label{A2}
+		\label{no2}
 		\end{figure}
 
 \item Jelaskan apa maksudnya kode program for train, test in splits, dilengkapi dengan ilustrasi atau gambar
 	\par Maksudnya yaitu untuk menguji apakah setiap data pada dataset sudah di split dan tidak terjadi penumpukan. Yang dimana maksudnya di setiap class tidak akan muncul id yang sama. Ilustrasinya misalkan kita memiliki 5 jam tangan dengan model yang berbeda. Kemudian kita bagikan jam tersebut kepada teman, tentunya teman tersebut yang menerima jam tangan itu tidak memiliki jam yang sama modelnya.
  
 
-\item Apa Maksud Kode Program train\_content = d['CONTENT'].iloc[train\_idx] dan test\_content = d['CONTENT'].iloc[test\_idx] Dilengkapi Dengan Ilustrasi Gambar.
+\item Menjelaskan maksud kode program
+	\lstinputlisting[firstline=8, lastline=20]{src/chapter7/A4.py}
+	\par Dari kode program tersebut dapat dijelaskan bahwa membuat fungsi train dan test dengan menggunakan dataset yang hanya diambil kolom 'CONTENT' saja. iloc berfingsi sebagai pengindeksan posisi menggunakan integer.
+	
+	\par Berikut ilustrasi dari kode program tersebut, perhatikan gambar \ref{no4}.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/chapter7/no4.jpg}
+		\caption{Ilustrasi Kode Program No.4}
+		\label{no4}
+		\end{figure}
 
 \item Apa Maksud Dari Fungsi Tokenizer = Tokenizer(num words=2000) Dan Tokenizer.fit on texts(train content), Dilengkapi Dengan Ilustrasi Gambar
+	\lstinputlisting[firstline=8, lastline=20]{src/chapter7/A5.py}
+		
+	\par Dari kode program  membuat variabel tokenizer untuk memanggil fungsi tokenizer agar dapat dilakukan vektorisasi dari kata. Dimana pada kode program pada baris pertama menggunakan 2000 kata atau 2000 kolom.
+	
+	
+	\par Berikut adalah gambar  \ref{no5}  ilustrasi dari fungsi pada kode program tersebut.
+	
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/chapter7/no5.jpg}
+		\caption{fungsi tokenizer}
+		\label{no5}
+		\end{figure}
 
 \item  Apa Maksud Dari Fungsi d train inputs = tokenizer.texts to matrix(train content, mode=’tfidf ’) dan d test inputs = tokenizer.texts to matrix(test content, mode=’tfidf ’), Dilengkapi Dengan Ilustrasi Kode Dan Atau Gambar
 
@@ -53,7 +76,22 @@ Please tell more about conclusion and how to the next work of this study.
 \item Jelaskan apa itu Deep Neural Network, dan apa bedanya dengan Deep Learning.
 	\par Deep Neural Network atau DNN merupakan algoritma yang berbasis neural network yang digunakan untuk mengambil keputusan. Yang membedakan Deep Learning dengan  Deep Neural Network (DNN) adalah DNN merupakan algoritma yang digunakan pada Deep Learning, sedangkan Deep Learning merupakan model yang menggunakan algoritma DNN.
 
-\item Jelaskan dengan ilustrasi gambar buatan sendiri bagaimana perhitungan algoritma konvolusi dengan ukuran stride (NPM mod3+1)x(NPM mod3+1) yang terdapat max pooling.
+\item Jelaskan dengan ilustrasi gambar langkah per langkah bagaimana perhitungan algoritma konvolusi dengan ukuran stide (NPM mod 3 + 1) x (NPM mod 3 + 1) yang terdapat max pooling !
+
+	\begin{itemize}
+		\item Pertama tentukan nilai (x,y) dan (x1,y1)
+		\item Nilai tersebut dibuat kedalam bentuk matrix
+		\item Jika sudah berbentuk matrix lakukan perkalian antar baris dan deret
+		\item Hasil perkalian tersebut dijumlahkan sehingga akan menghasilkan nilai matrix (3x3)
+	\end{itemize}
+
+	\subitem Untuk ilustrasi dapat dilihat pada figure \ref{no13}
+
+	\begin{figure}[!htbp!]
+		\centerline{\includegraphics[width=0.5\textwidth]{figures/Chapter7/no13.png}}
+		\caption{Algoritma Konvolusi Dengan Matrix (3x3).}
+		\label{no13}
+	\end{figure}	
 
 \end{enumerate}
 
