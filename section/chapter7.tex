@@ -62,13 +62,70 @@ Please tell more about conclusion and how to the next work of this study.
 
 \item  Apa Maksud Dari Fungsi d train inputs = tokenizer.texts to matrix(train content, mode=’tfidf ’) dan d test inputs = tokenizer.texts to matrix(test content, mode=’tfidf ’), Dilengkapi Dengan Ilustrasi Kode Dan Atau Gambar
 
+	\lstinputlisting[firstline=8, lastline=20]{src/chapter7/A6.py}
+		
+	\par Dari fungsi pada kode program tersebut dapat dijelaskan bahwa :
+	\begin{enumerate}
+	\item Baris pertama membuat variabel d\_train\_inputs untuk memanggil fungsi tokrnizer dan merubah data train yang berupa teks ke dalam bentuk matrix dengan menggunakan model tfidf.
+	\item Baris kedua membuat variabel d\_test\_inputs untuk memanggil fungsi tokrnizer dan merubah data test yang berupa teks ke dalam bentuk matrix dengan menggunakan model tfidf.
+	\end{enumerate}
+	
+	\par Berikut adalah gambar \ref{no6} ilustrasi dari fungsi pada kode program tersebut.
+	
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/chapter7/no6.jpg}
+		\caption{fungsi dtrain inputs}
+		\label{no6}
+		\end{figure}
+
 \item Apa Maksud Dari Fungsi d train inputs = d train inputs/np.amax(np.absolute(d\_train) :
+	\lstinputlisting[firstline=8, lastline=20]{src/chapter7/A7.py}
+		
+	\par Dari fungsi pada kode program tersebut dapat dijelaskan bahwa fungsi tersebut akan membagi matrix tfidf tadi dengan amax yaitu mengembalikan maksimum array atau maksimum sepanjang sumbu. Yang hasilnya akan dimasukan kedalam variabel d\_train\_inputs untuk data train dan d\_test\_inputs untuk data test dengan nominal absolut atau tanpa ada bilangan negatif dan koma.
+	
+	\par Berikut adalah gambar \ref{no7} ilustrasi dari fungsi pada kode program tersebut.
+	
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/chapter7/no7.jpg}
+		\caption{dtrain iinputs}
+		\label{no7}
+		\end{figure}
 
 \item Jelaskan apa maksud dari fungsi d\_train\_outputs dan d\_test\_outputs, dilengkapi dengan ilustrasi atau gambar.
+\lstinputlisting[firstline=8, lastline=20]{src/chapter7/A8.py}
+		
+	\par Dari fungsi pada kode program tersebut dapat dijelaskan bahwa fungsi tersebut ditujukan untuk melakukan one-hot encoding supaya bisa masuk dan digunakan pada neural network. One-hot encoding diambil dari 'CLASS' yang berarti hanya terdapat 2 neuron, yaitu satu nol(1,0) atau nol satu(0,1) karena pilihannya hanya ada dua (spam atau bukan).
+	\par Berikut adalah gambar \ref{no8} ilustrasi dari fungsi pada kode program tersebut.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/chapter7/no8.jpg}
+		\caption{fungsi dtrain outputs}
+		\label{no8}
+		\end{figure}
 
 \item Jelaskan apa maksud dari fungsi di listing 7.2 , Gambarkan ilustrasi Neural Networknya.
+\lstinputlisting[firstline=8, lastline=20]{src/chapter7/A9.py}
+	\par Dari fungsi pada kode program tersebut ditujukan untuk melakukan pemodelan dengan sequential, membandingkan setiap satu larik elemen dengan cara satu persatu secara beruntun. Dimana terdapat 512 neuron inputan dengan input shape 2000 vektor yang sudah dinormalisasi. Lalu model dilakukan aktivasi dengan fungsi 'relu'. Kemudian dilakukan pemotongan bobot supaya tidak overfitting sebesar 50 persen dari neuron inputan 512. Lalu pada layer output terdapat 2 neuron outputan yaitu nol(1,0) atau nol satu(0,1). Kemudian outputan tersebut diaktivasi menggunakan fungsi softmax (mencari nilai maximal).
+	\par Berikut adalah gambar \ref{no9} ilustrasi dari fungsi pada kode program tersebut.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/chapter7/no9.jpg}
+		\caption{fungsi di listing 7.2}
+		\label{no9}
+		\end{figure}
 
 \item Jelaskan apa maksud dari fungsi di listing 7.3 .
+\lstinputlisting[firstline=8, lastline=20]{src/chapter7/A10.py}
+	\par Dari fungsi pada kode program tersebut model yang telah dibuat selanjutnya dicompile dengan menggunakan algoritma optimisasi, fungsi loss, dan fungsi metrik.
+	\par Berikut adalah gambar \ref{no10} ilustrasi dari fungsi pada kode program tersebut.
+		\begin{figure}[!hbtp]
+		\centering
+		\includegraphics[scale=0.4]{figures/chapter7/no10.jpg}
+		\caption{fungsi di listing 7.3}
+		\label{no10}
+		\end{figure}
 
 \item Jelaskan apa itu Deep Learning.
 	\par Deep Learning merupakan cabang dari Machine Learning atau bagian keluarga yang lebih luas dari method machine learning berdasarkan pada representasi data pembelajaran. Deep Learning menggunakan Deep Neural Network dalam menyelesaikan suatu masalah yang terjadi pada Machine Learning.
